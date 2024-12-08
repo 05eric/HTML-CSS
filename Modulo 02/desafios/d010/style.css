@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format('opentype');
+    font: normal;
+}
+body{
+    margin: 0px;
+    font: 1em Arial, Helvetica, sans-serif;
+    background-color: rgb(22, 255, 150);
+}
+header{
+    background-color: rgb(0, 255, 153);
+    color: white;
+    margin: 0px;
+    background-image: linear-gradient(to top, #000000ad, rgb(22, 255, 150));
+
+}
+header>h1{
+    text-align: center;
+    margin: 0px;
+    padding: 20px 0px 10px 0px;
+    font-weight: lighter;
+}
+header>p{
+    text-align: center;
+}
+nav{
+    padding: 5px;
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+}
+main{
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 10px 0px;
+}
+
+section.historia>h1{
+    font-family: 'idroid';
+    text-align: left;
+    color: green;
+    margin: 15px;
+    background-image: linear-gradient(to left, #ffffff, rgba(22, 255, 150, 0.266));
+}
+section.historia>h2{
+    font-family: 'idroid';
+    text-align: left;
+    color: green;
+    margin: 15px;
+    background-image: linear-gradient(to left, #ffffff, rgba(22, 255, 150, 0.266));
+}
+section>p{
+    text-align: justify;
+    margin: 15px;
+}
+section.historia{
+    text-align: center;
+}
+div{
+    background-color: green;
+    padding: 50px;
+}
+section.aprender{
+    background-color: rgb(22, 255, 150);;
+    margin: 15px;
+    border-radius: 10px;
+}
+section.aprender > h2{
+    background-color: green;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+footer{
+    background-color: rgb(0, 184, 34);
+    color: #ffffff;
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+    padding: 5px 0px;
+}
