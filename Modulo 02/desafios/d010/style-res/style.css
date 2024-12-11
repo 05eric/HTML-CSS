@@ -24,10 +24,11 @@
 }
 body{
     background-color: var(--cor0);
+    font-family: var(--fon-pad);
 }
 header{
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
-    height: 200px;
+    height: 170px;
     text-align: center;
     padding-top: 40px;
 }
@@ -56,7 +57,6 @@ nav>a{
     color: white;
     font-weight: bold;
     padding: 10px;
-    font-family: var(--fon-pad);
     border-radius: 5px;
     transition-duration: 0.4s;
 }
@@ -87,7 +87,7 @@ img{
     width: 100%;
 }
 img.bug{
-    width: 40%;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
