@@ -26,6 +26,9 @@ body{
     background-color: var(--cor0);
     font-family: var(--fon-pad);
 }
+a.externo::after{
+    content: '\00A0\1F517';
+}
 header{
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
     height: 170px;
@@ -91,11 +94,12 @@ main p{
     text-align: justify;
     margin: 15px 0px;
     text-indent: 30px;
+    /* Espasço entre as linhas do p */
     line-height: 2em;
     font-size: 1em;
 }
 main strong{
-    color: var(--cor4);
+    color: var(--cor5);
 }
 main a{
     text-decoration: none;
@@ -116,8 +120,36 @@ img.bug{
     display: block;
     margin: auto;
 }
+aside{
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.351);
+}
+aside>h3{
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside>ul{
+    /* Colocar pra dentro os pontos */
+    list-style-position: inside;
+    /* 00A0 é um espaço */
+    list-style-type: '\2714\00A0';
+    columns: 2;
+}
 footer{
     background-color: var(--cor5);
     color: white;
     text-align: center;
+    padding: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--cor2);
+}
+footer a:hover{
+    text-decoration: underline;
 }
