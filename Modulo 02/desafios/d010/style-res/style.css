@@ -82,6 +82,31 @@ main h1{
 }
 main h2{
     font-family: var(--fon-and);
+    font-size: 1.2em;
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding-left: 15px;
+}
+main p{
+    text-align: justify;
+    margin: 15px 0px;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+main strong{
+    color: var(--cor4);
+}
+main a{
+    text-decoration: none;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    padding: 3px;
+    font-weight: bold;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
 }
 img{
     width: 100%;
@@ -94,4 +119,5 @@ img.bug{
 footer{
     background-color: var(--cor5);
     color: white;
+    text-align: center;
 }
