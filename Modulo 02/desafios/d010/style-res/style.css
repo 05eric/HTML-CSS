@@ -96,6 +96,7 @@ main h2{
 main p{
     text-align: justify;
     margin: 15px 0px;
+    /* Espaço onde começa o paragrafo */
     text-indent: 30px;
     /* Espasço entre as linhas do p */
     line-height: 2em;
