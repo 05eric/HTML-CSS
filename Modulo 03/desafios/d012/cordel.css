@@ -58,6 +58,9 @@ section{
     padding: 10vh 0px 10vh 30px;
 }
 
+section>p{
+    padding-bottom: 2em;
+}
 #im01{
     background: url(imagens/background001.jpg) center center no-repeat fixed;
     background-size: cover;
@@ -69,7 +72,8 @@ section{
 }
 
 section.ima{
-    box-shadow: black -10px -10px 0px;
+    /* inset é para sombra aparece pra dentro */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.554);
 }
 section.ima>p{
     background-color: rgba(0, 0, 0, 0.503);
@@ -77,6 +81,7 @@ section.ima>p{
     padding: 5px;
     /* Fazer a caixa a se adapta no que tem dentro */
     display: inline-block;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.572);
 }
 
 footer{
