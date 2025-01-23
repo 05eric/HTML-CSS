@@ -10,6 +10,13 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         table{
             width: 500px;
             border-collapse: collapse;
@@ -20,12 +27,24 @@
             padding: 8px;
         }
 
+        /* 
+            Efeito  zebrado 
+             nth-child(even(par), odd(impar), 2n-1 e 2n)
+        */
+        tbody>tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+
+        #pop{
+            width: 90px;
+        }
+
         .num{
             text-align: right;
         }
 
         thead, tfoot{
-            background-color: grey;
+            background-color: #383838;
             color: white;
         }
     </style>
@@ -41,11 +60,12 @@
         TFOOT
             TR, TD, TH
      -->
-    <table>
+     <table>
+        <caption>População das unidades Federativas.</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" id="pop">População</th>
             </tr>
         </thead>
         <tbody>
@@ -80,7 +100,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de  Habitandes</th>
+                <th scope="row">Total de  Habitandes</th>
                 <td class="num"><strong>131 959 683</strong></td>
             </tr>
         </tfoot>
